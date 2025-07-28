@@ -1,0 +1,24 @@
+1. Learnings from the Experiment
+In this experiment, I learned:
+How to create a basic HTML form structure using various input types (text, email, number).
+How to implement built-in HTML5 form validation using attributes like:
+required to make fields mandatory.
+type="email" for validating email format.
+type="number" with min and max to restrict age input.
+pattern to enforce input rules (e.g., only letters for names).
+How HTML5 provides real-time, client-side validation without JavaScript.
+Importance of form semantics and accessibility for better user experience.
+How to test form validation with various edge cases.
+
+
+2. Test Cases / Scenarios Covered
+Test Case	Input	Expected Behavior
+Empty Form Submission	All fields blank	Shows browser validation errors for all required fields
+Invalid Email Format	john.doe	Error: "Please enter an email address"
+Valid Email Format	john.doe@example.com	Accepted
+Name with Numbers	John123	Error (if pattern used for letters only)
+Name with only Letters	John Doe	Accepted
+Age Below Minimum	5	Error: "Value must be greater than or equal to 10"
+Age Above Maximum	150	Error: "Value must be less than or equal to 100"
+Valid Age Input	25	Accepted
+All Valid Inputs	Correct Name, Email, and Age	Form submitted successfully
